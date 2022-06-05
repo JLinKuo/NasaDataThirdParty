@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".view.inspection.InspectionFragment"
+    >
+    <com.otaliastudios.zoom.ZoomImageView
+        android:id="@+id/inspection_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:scrollbars="vertical|horizontal"
+        app:alignment="center"
+        app:overScrollHorizontal="true"
+        app:overScrollVertical="true"
+        app:zoomEnabled="true"
+        app:scrollEnabled="true"
+        app:oneFingerScrollEnabled="true"
+        app:twoFingersScrollEnabled="true"
+        app:threeFingersScrollEnabled="true"
+        app:minZoom="0.9"
+        app:minZoomType="zoom"
+        app:maxZoom="4"
+        app:maxZoomType="zoom"
+        app:animationDuration="100"
+        app:hasClickableChildren="false"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

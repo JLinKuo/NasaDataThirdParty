@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/baseContainerFragment">
+
+    <fragment
+        android:id="@+id/baseContainerFragment"
+        android:name="com.example.nasadata.view.nasa_data_container_view.BaseContainerFragment"
+        android:label="NasaData"
+        tools:layout="@layout/fragment_base_container">
+        <action
+            android:id="@+id/action_baseContainerFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.nasadata.view.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_inspectionFragment"
+            app:destination="@id/inspectionFragment" />
+        <argument
+            android:name="entity"
+            app:argType="com.example.nasadata.model.db.NasaDataEntity" />
+    </fragment>
+    <fragment
+        android:id="@+id/inspectionFragment"
+        android:name="com.example.nasadata.view.inspection.InspectionFragment"
+        android:label="Inspection"
+        tools:layout="@layout/fragment_inspection" >
+        <argument
+            android:name="entity"
+            app:argType="com.example.nasadata.model.db.NasaDataEntity" />
+    </fragment>
+</navigation>

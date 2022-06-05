@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="nasa_data_item_decoration_around_space">0dp</dimen>
+    <dimen name="nasa_data_item_decoration_separate_space">1dp</dimen>
+</resources>

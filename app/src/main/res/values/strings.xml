@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NasaData</string>
+
+    <string name="all_image">所有圖檔(%s)</string>
+    <string name="dialog_wait">請稍後&#8230;</string>
+    <string name="favor_image">我的最愛(%s)</string>
+
+</resources>
